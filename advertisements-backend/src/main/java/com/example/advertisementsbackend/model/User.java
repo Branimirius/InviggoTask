@@ -30,6 +30,16 @@ public class User {
     @Column(name = "phone")
     private String phone;
 
+    public User(long id, String username, String password, LocalDateTime dateJoined, String phone) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.dateJoined = dateJoined;
+        this.phone = phone;
+    }
+
+    public User() {}
+
     public long getId() {
         return id;
     }

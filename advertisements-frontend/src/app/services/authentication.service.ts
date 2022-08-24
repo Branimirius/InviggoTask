@@ -24,7 +24,7 @@ export class AuthenticationService {
 
     login(username:string, password:string) {
         const body = {
-            eMail : username,
+            username : username,
             pass: password            
           };
           let headers = new HttpHeaders({

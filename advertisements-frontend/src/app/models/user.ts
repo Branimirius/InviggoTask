@@ -9,8 +9,8 @@ export class User {
         this.id = 0;
         this.username = "";
         this.password = "";
-        this.phone = "";
         this.dateJoined = new Date();
+        this.phone = "";
        
     }
 }

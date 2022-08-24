@@ -1,44 +1,20 @@
-package com.example.advertisementsbackend.model;
+package com.example.advertisementsbackend.dto;
 
-import com.example.advertisementsbackend.enums.Category;
-
-import javax.persistence.*;
+import javax.persistence.Column;
 import java.time.LocalDateTime;
 
-
-@Entity(name = "advertisements")
-@Table(name = "advertisements")
-public class Advertisement {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class AdvertisementDTO {
     private long id;
-
-    @Column(name = "name")
     private String name;
-
-    @Column(name = "description")
     private String description;
-
-    @Column(name = "photo_url")
     private String photoUrl;
-
-    @Column(name = "price")
     private Double price;
-
-    @Column(name = "category")
     private String category;
-
-    @Column(name = "user_id")
     private long userId;
-
-    @Column(name = "city")
     private String city;
-
-    @Column(name = "date_created")
     private LocalDateTime dateCreated;
 
-    public Advertisement(long id, String name, String description, String photoUrl, Double price, String category, long userId, String city, LocalDateTime dateCreated) {
+    public AdvertisementDTO(long id, String name, String description, String photoUrl, Double price, String category, long userId, String city, LocalDateTime dateCreated) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -49,9 +25,6 @@ public class Advertisement {
         this.city = city;
         this.dateCreated = dateCreated;
     }
-
-    public Advertisement(){}
-
 
 
     public long getId() {

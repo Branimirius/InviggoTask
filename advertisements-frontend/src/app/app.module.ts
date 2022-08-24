@@ -21,6 +21,9 @@ import { MatInputModule } from '@angular/material/input';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RegistrationComponent } from './registration/registration.component';
+import { HomeComponent } from './home/home.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { NewAddComponent } from './new-add/new-add.component';
 
 
 
@@ -29,7 +32,9 @@ import { RegistrationComponent } from './registration/registration.component';
     AppComponent,
     NavigationComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    HomeComponent,
+    NewAddComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +51,7 @@ import { RegistrationComponent } from './registration/registration.component';
     MatBadgeModule,
     BrowserModule,
     AppRoutingModule,
+    MatDialogModule,
     CommonModule,
     ToastrModule.forRoot({
       preventDuplicates: false,

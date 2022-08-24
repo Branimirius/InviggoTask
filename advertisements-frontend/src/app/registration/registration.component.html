@@ -10,7 +10,7 @@
   
                     <h2>Register</h2>
   
-                  <form class="mx-1 mx-md-4">
+                  <div class="mx-1 mx-md-4">
   
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
@@ -23,7 +23,7 @@
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input type="email" id="form3Example3c" matInput [(ngModel)]="newUser.password" class="form-control" />
+                        <input type="password" id="form3Example3c" matInput [(ngModel)]="newUser.password" class="form-control" />
                         <label class="form-label" for="form3Example3c">Password</label>
                       </div>
                     </div>
@@ -39,7 +39,7 @@
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input type="password" id="form3Example4cd" matInput [(ngModel)]="newUser.phone" class="form-control" />
+                        <input type="text" id="form3Example4cd" matInput [(ngModel)]="newUser.phone" class="form-control" />
                         <label class="form-label" for="form3Example4cd">Phone</label>
                       </div>
                     </div>
@@ -47,11 +47,11 @@
                     
                     
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <button type="button" class="btn btn-primary ">Register</button>
+                      <button type="button" (click)="sendRegistration()" class="btn btn-primary ">Register</button>
                       <a routerLink="/login" class="btn btn-link">Login</a>
                     </div>
   
-                  </form>
+                  </div>
   
                 </div>
                 

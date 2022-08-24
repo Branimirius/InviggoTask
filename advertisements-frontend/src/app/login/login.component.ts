@@ -21,10 +21,10 @@ export class LoginComponent implements OnInit {
         private authenticationService: AuthenticationService,
         private alertService: AlertService
     ) {
-        // redirect to home if already logged in
+        //redirect to home if already logged in
         if (this.authenticationService.currentUserValue.id != null) {
             
-             this.router.navigate(['/']);
+             this.router.navigate(['/home']);
         }
         this.loginForm = this.formBuilder.group({
           username: ['', Validators.required],
